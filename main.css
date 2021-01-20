@@ -31,7 +31,7 @@ h1 {
 
 .adamfade {
 
-  background-image: url(pfp_test_inverted.png);
+  background-image: url("pfp_test_inverted.png");
   background-repeat: no-repeat;
   background-position: left top;
   padding-top:95px;

@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  $(".twitter").hover(function(){
-    $(".header-logo").addClass("twitter_border");
+  $(".img").hover(function(){
+    $(".bodyP").addClass("adamfade");
   }, function () {
-    $(".header-logo").removeClass("twitter_border");
+    $(".bodyP").removeClass("adamfade");
   });
 });
