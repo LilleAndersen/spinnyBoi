@@ -4,55 +4,35 @@ body {
     padding: 0;
     min-height: 100vh;
     max-width: 100%;
-    background: #6c6c6c;
+    background: #080808;
     font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
+    text-shadow: -1px -1px 0 #11d197, 2px -1px 0 #11d197, -1px 2px 0 #11d197, 2px 2px 0 #11d197;
     text-align: center;
     font-size: 3rem;
+    color: black;
+    padding-top: 60px;
 }
 
-.img {
-    position: absolute;
+.rotate {
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
     border-radius: 100%;
-    box-shadow: 5px 5px 5px 0 #414141, -5px -5px 5px 0 #cecece;
-    border: 3px solid #13edab;
-
+    border: 5px solid #13edab;
     transition: transform ease-in-out 0.2s;
 }
 
-.img:hover {
-    transform: translate3d(-50%, -50%, 0) scale(1.1);
-}
-
-.adamfade {
-
-  background-image: url("pfp_test_inverted.png");
-  background-repeat: no-repeat;
-  background-position: left top;
-  padding-top:95px;
-  margin-bottom:60px;
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeIn {
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
-
-@keyframes fadeIn {
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
-
-.fadeIn {
--webkit-animation-name: fadeIn;
-animation-name: fadeIn;
+.rotate:hover {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: scale(1.1) rotate(360deg);
 }
