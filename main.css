@@ -24,6 +24,10 @@ h1 {
     transition: transform ease-in-out 0.2s;
 }
 
+.center {
+    text-align: center;
+}
+
 .rotate:hover {
   transition: 0.70s;
   -webkit-transition: 0.70s;
